@@ -1,0 +1,397 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#main{
+    width: 100%;
+    height: 100VH;
+}
+.imgcontainer img{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+#overlay{
+    position: absolute;
+    /* position: fixed; Sit on top of the page content */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 5; 
+}
+
+.mainnav{
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    border-bottom: 1px solid white;
+}
+.firstnav{
+    display: flex;
+}
+.firstnav i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(39, 143, 196);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 2rem;
+    color: white;
+}
+.firstnav h5{
+    color: white;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.mainnav h1{
+    font-size: 30px;
+}
+.lastnav i{
+    font-size: 1.5rem;
+}
+.small-Nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 5px;
+    height: 40px;
+    /* background-color: aqua; */
+    padding-left: 7rem;
+    padding-right: 4rem ;
+}
+
+.small-Nav a{
+
+    text-decoration: none;
+    /* margin-left: 30px; */
+    color: white;
+}
+.first{
+    color: white;
+    font-size: 25px;
+
+}
+.small-Nav button{
+    color: white;
+    background-color: rgb(39, 143, 196);
+    padding: 10px 10px;
+    border-radius: 10px;
+    display: inline-block;
+outline: none;
+cursor: pointer;
+font-size: 12px;
+line-height: 1;
+border-radius: 500px;
+transition-property: background-color,border-color,color,box-shadow,filter;
+letter-spacing: 2px;
+min-width:120px;
+margin-right: 2%;
+
+
+}
+.middle{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 45%;
+    /* background-color: aqua; */
+    /* margin-left: 5%; */
+}
+
+.Middle-Text{
+    /* font-family: sans-serif; */
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* background-color: aqua; */
+    width: 50%;
+    height: 30%;
+}
+.Middle-Text p{
+    margin-top: 1rem;
+    color: white;
+}
+.Middle-Text h1{
+    font-size: 70px;
+    color: white;
+}
+.Middle-Text .btn-btn button{
+    color: white;
+    background-color: rgb(39, 143, 196);
+    padding: 14px 14px;
+    border-radius: 10px;
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    font-size: 14px;
+line-height: 1;
+border-radius: 500px;
+transition-property: background-color,border-color,color,box-shadow,filter;
+letter-spacing: 2px;
+min-width:150px;
+margin-top: 1rem;
+}
+#about{
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+}
+.about-top{
+    padding-top: 2rem;
+    text-align: center;
+}
+.about-top h1{
+    font-size: 40px;
+}
+.about-top h1, p{
+    margin-top: .5rem;
+}
+.about-top h3{
+    color: rgb(39, 143, 196);
+}
+.places-images{
+    position: relative;
+    margin-top: 4rem;
+    width: 330px;
+    height: 390px;
+    border-radius: 20px;
+    background-color: aqua;
+}
+#main-images{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#about button{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    color: white;
+    background-color: rgb(39, 143, 196);
+    padding: 14px 14px;
+    border-radius: 10px;
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    font-size: 14px;
+line-height: 1;
+border-radius: 500px;
+letter-spacing: 2px;
+min-width:150px;
+margin-top: 2rem;
+}
+
+.places-images img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.places-images .description{
+    position: absolute;
+    font-family: sans-serif;
+    padding: 20px 15px;
+    bottom: 5%;
+    left: 10%;
+    width: 270px;
+    height: 150px;
+    background-color: white;
+    border-radius: 10px;
+    z-index: 10;
+}
+.description h5{
+    color: rgb(39, 143, 196);
+}
+.description p {
+    font-size: 13px;
+    line-height: 18px;
+}
+.description h2{
+    margin-top: 1rem;
+}
+#destinations{
+    width: 100%;
+    /* height: 100vh; */
+    background-color: #dadada;
+}
+#galleries{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+}
+.gallery{
+    width: 300px;
+    height: 70%;
+    /* background-color: aqua; */
+    margin-bottom: 8%;
+}
+.gallery-one{
+    width: 100%;
+    height: 55% ;
+    background-color: blueviolet;
+}
+.gallery-two{
+    margin-top: 18%;
+    width: 100%;
+    height: 35% ;
+    background-color: burlywood ;
+}
+.gallery-one img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.gallery-two img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.gallery img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#Footer{
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+}
+.review-box{
+    margin-top: 5%;
+    padding: 1rem 1rem;
+    width: 18.5rem;
+    height: 18.5;
+    /* background-color: aqua; */
+    background-color: #fff;
+    box-shadow: inset 1px 1px 5px rgb(151, 149, 149);
+}
+.stars i{
+    color: rgb(39, 143, 196);
+}
+.dpimg{
+    display: flex;
+    align-items: center;
+    margin-top: 5%;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    /* background-color: yellow; */
+}
+
+.dpimg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.dpimg h4
+{
+    margin-left: 15%;
+}
+#Footer p{
+    line-height: 30px;
+}
+#riviews{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width : 500px){
+    .firstnav h5{
+        display: none;
+    }
+
+    .mainnav h1{
+        font-size: 25px;
+    }
+    .small-Nav .middle{
+        display: none;
+    }
+    .small-Nav {  
+        padding-right: 0%;
+        padding-left: 0%; 
+    }
+    .Middle-Text h1{
+        font-size: 30px;
+    }
+    #main-images{
+        flex-direction: column;
+    }
+    .about-top h1{
+        font-size: 35px;
+    }
+    #destinations{
+        margin-top: 250%;
+    }
+    #galleries{
+        flex-direction: column;
+    }
+    .gallery{
+        margin-top: 5%;
+    }
+    #riviews{
+        flex-direction: column;
+
+    }
+    .review-box{
+        font-size: 15px;
+        margin-top: 5%;
+    }
+
+    #Footer p {
+        font-size: 15px;
+    }
+    
+
+}
+
+
+
